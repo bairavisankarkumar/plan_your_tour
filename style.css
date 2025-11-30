@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Science Gothic", sans-serif;
+}
+
+header{
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5s ease;
+}
+
+header .brand{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 7px;
+    text-decoration: none;
+}
+
+header .navi-1 {
+    position: relative;
+}
+
+header .navi .navi-1 a{
+    position: relative;
+    color: white;
+    font-size: 1em;
+    font-family: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navi .navi-1 a:before{
+    content:'';
+    position:absolute;
+    background: white;
+    width:0;
+    height: 3px;
+    bottom: 0;
+    left:0;
+    transition: 0.3s ease;
+}
+
+header .navi .navi-1 a:hover:before{
+    width:100%;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.home{
+    position: relative;
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(0, 77, 58);
+}
+.home .content{
+    z-index: 888;
+    color: white;
+    width:70%;
+    margin-top: 50px;
+}
+.home .content h1{
+    font-size: 5em;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 90px;
+    margin-bottom: 60px;
+    color: white;
+    border: 2px;
+    border-color: black;
+    -webkit-text-stroke: 4px black; /* Thickness + color */
+}
+
+
+.home .content h1 span{
+    font-size: 1.0em;
+    font-weight: 600;
+    color: rgb(0, 77, 58); 
+    -webkit-text-stroke: 4px black;
+}
+
+.home .content p{
+    margin-bottom:65px;
+    color: black;
+}
+.home .content #extra{
+    color: rgb(0, 0, 0);
+    display:none;
+}
+.home .content p span{
+    font-family: mv boli;
+    font-size: 1.3em;
+    color:  rgb(7, 58, 44);
+}
+.home .content button{
+    background: rgb(255, 255, 255);
+    padding:10px 25px;
+    font-size:1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 1s;
+}
+.home .content button:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: black;
+}
+.home .icons{
+    z-index:1;
+    position: absolute;
+    right:30px;
+    display: flex;
+    flex-direction: column;
+    transform: 0.3s ease;
+}
+.home .icons a{
+    color:rgb(0, 0, 0);
+    font-size: 1.6em;
+    transition: 1.1s;
+}
+.home .icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+.home .icons a:hover{
+    transform: scale(1.4);
+}
+video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
